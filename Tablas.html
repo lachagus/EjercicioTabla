@@ -1,0 +1,125 @@
+<html>
+
+<head></head>
+
+<body>
+    <table border="1">
+        <form action="">
+            <tr>
+                <td align="left">
+                    <strong>Nombre</strong>
+                </td>
+                <td align="left">
+                    <strong>Apellido</strong>
+                </td>
+               
+            </tr>
+            <tr>
+                <td align="left">
+                    Comentario:
+                </td>
+                <td>
+                    23
+                </td>
+                <td>
+                    Butti
+                </td>
+                <td>
+                    Julián
+                </td>        
+            </tr>
+        </form>
+    </table>
+
+
+    <form action="/api/procesar" method="GET">
+        <!-- /api/procesar?par1=val1&par2=val2 -->
+
+    </form>
+
+    <form action="">
+
+    </form>
+
+    <form action="https://formspree.io/f/2323232" method="POST" enctype="multipart/form-data">
+        Nombre :
+        <input name="camponombre" type="text" value="Mi nombre" placeholder="Complete su nombre" required /><br /> Email :
+        <input name="campoemail" type="email" value="Mi email" placeholder="Complete su email" /><br /> Texto:
+        <textarea name="campotexto" placeholder="Escriba su texto">Valor por defecto</textarea><br /> Acepta los términos y condiciones?
+        <input type="checkbox" name="tilde" value="1" /> SI
+        <br /><br /> Color preferido:
+        <input type="radio" name="color" value="rojo" /> Rojo<br />
+        <input type="radio" name="color" value="verde" /> Verde <br />
+        <input type="radio" name="color" value="azul" /> Azul<br /> Edad: <input type="number" max="150" min="0" name="edad" placeholder="Complete con su edad" required />
+
+        <input name="boton" type="submit" value="Enviar Formulario" />
+
+
+        <input type="reset" value="Vaciar Formulario" />
+        <button type="reset"><i class=""></i> Formulario - <strong>Limpiar</strong></button>
+
+        <input type="file" name="cv" placeholder="Adjuntá tu CV" />
+
+        <input type="button" value="Volver al menú" onclick="" />
+
+        <input type="hidden" name="fecha" value="29 de octubre" />
+        <input type="hidden" name="usuario" value="[ID]" />
+
+    </form>
+
+
+
+    <form action="resultados.html" method="POST">
+        <input type="text" name="q" value="hola" placeholder="Ingrese su búsqueda" />
+        <input type="submit" value="Buscar" />
+    </form>
+    <!--
+        Si fuera GET
+        resultados.html?q=hola
+    -->
+
+    <form action="resultados.html?orden=DESC" method="POST">
+        <input type="text" name="cuadro_deBusqueda" value="hola" placeholder="Ingrese su búsqueda" />
+        <input type="submit" value="Buscar" />
+    </form>
+
+
+
+
+
+    <div id="formulario1" class="borderojo">
+        <form id="form" action="resultados.html" method="POST">
+            <input id="q" type="text" name="q" value="hola" placeholder="Ingrese su búsqueda" />
+            <input id="enviar" class="btn btn-verde" type="submit" value="Buscar" />
+        </form>
+    </div>
+
+
+
+    <style>
+        #formulario1 {
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+        }
+        
+        .btn {
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+        }
+    </style>
+
+
+
+
+    1- Armar repo GIT 2- Armar una TABLA 3- Ordenar en la tabla un formulario de forma tal que se visualice: |Nombre |Apellido | |Comentario | (textarea) | email | | boton de enviar |
+
+
+
+
+
+
+</body>
+
+</html>
